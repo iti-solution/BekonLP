@@ -1,3 +1,3 @@
-# Bekon Landing Page
+# Bekon Landing Page (fixed)
 
-Zaktualizowana wersja opisów zgodnie ze stylem biznesowym.
+Usunięto tagline, przywrócono poprzedni dashboard.
