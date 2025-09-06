@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BEKON — Polski system OMS dla hurtowni świeżej żywności</title>
+
+  <meta name="description" content="BEKON to polski system OMS dla hurtowni świeżej żywności. Zamówienia bez błędów, kompletacja, dostawy, fakturowanie i raporty w jednym miejscu. 30-dniowy trial — bez karty." />
+  <link rel="canonical" href="https://www.bekon.pl/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bekon.pl/" />
+  <meta property="og:title" content="BEKON — polski Fresho dla rynku HoReCa" />
+  <meta property="og:description" content="Zamknięty B2B, automatyzacja zamówień, —
+  <meta property="og:image" content="https://www.bekon.pl/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] },
+          colors: { brand: { 600: '#6d5bd0' } },
+          animation: {
+            'fade-in': 'fadeIn .6s ease both',
+            'slide-up': 'slideUp .6s ease both',
+          },
+          keyframes: {
+            fadeIn: { from: {opacity:0}, to:{opacity:1} },
+            slideUp: { from:{opacity:0, transform:'translateY(12px)'}, to:{opacity:1, transform:'translateY(0)'} }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .gradient-text { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .hover-lift { transition: transform .25s ease, box-shadow .25s ease; }
+    .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 14px 28px -14px rgba(0,0,0,.25); }
+    .grid-pattern { background-image: linear-gradient(rgba(0,0,0,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.035) 1px, transparent 1px); background-size: 42px 42px; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- NAV -->
+  <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+    <div class="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between">
+      <a href="#top" class="flex items-center" aria-label="Strona główna">
+        <span class="text-2xl font-extrabold">BEKON</span>
+        <span class="ml-2 text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">OMS</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#solution" class="hover:text-gray-900 text-gray-600">Rozwiązanie</a>
+        <a href="#features" class="hover:text-gray-900 text-gray-600">Funkcje</a>
+        <a href="#benefits" class="hover:text-gray-900 text-gray-600">Korzyści</a>
+        <a href="#pricing" class="hover:text-gray-900 text-gray-600">Cennik</a>
+        <a href="#consultation" class="hover:text-gray-900 text-gray-600">Kontakt</a>
+      </div>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="https://app.bekon.pl" class="text-gray-600 hover:text-gray-900">Zaloguj się</a>
+        <a href="#consultation" class="bg-black text-white px-4 py-2 rounded-lg">Umów prezentację</a>
+      </div>
+      <button id="mm" class="md:hidden border rounded-md px-3 py-1">☰</button>
+    </div>
+    <div id="mmenu" class="hidden md:hidden border-t border-gray-100 px-6 py-3 bg-white">
+      <a class="block py-2" href="#solution">Rozwiązanie</a>
+      <a class="block py-2" href="#features">Funkcje</a>
+      <a class="block py-2" href="#benefits">Korzyści</a>
+      <a class="block py-2" href="#pricing">Cennik</a>
+      <a class="block py-2" href="#consultation">Kontakt</a>
+      <a class="block py-2" href="https://app.bekon.pl">Zaloguj się</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="pt-28 md:pt-32 pb-16 md:pb-24 px-6 relative overflow-hidden">
+    <div class="absolute inset-0 grid-pattern opacity-60" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto relative z-10">
+      <div class="text-center">
+        <span class="inline-flex items-center text-xs md:text-sm bg-purple-50 border border-purple-200 text-purple-700 rounded-full px-3 py-1">Polski system OMS dla hurtowni świeżej żywności</span>
+        <h1 class="mt-5 text-4xl md:text-6xl font-extrabold leading-tight">
+          Zamówienia, kompletacja,<br class="hidden md:block"/> faktury i płatności <span class="gradient-text">w jednym miejscu</span>
+        </h1>
+        <p class="mt-5 text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
+          BEKON to „polski Fresho” — zamknięta platforma B2B, która automatyzuje zamówienia, porządkuje operacje i ogranicza marnotrawstwo.
+        </p>
+        <div class="mt-7 flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="#consultation" class="bg-black text-white px-7 py-3 rounded-lg">Umów 30‑min prezentację</a>
+          <a href="#features" class="border border-gray-300 px-7 py-3 rounded-lg">Poznaj funkcje</a>
+        </div>
+        <p class="mt-4 text-xs text-gray-500">30 dni bez opłat • Bez karty • Wdrożenie w 7 dni</p>
+      </div>
+      <!-- KPIs -->
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-5 max-w-4xl mx-auto">
+        <div class="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-xl p-4">
+          <div class="text-3xl font-extrabold"><span class="kpi" data-target="50">0</span>+</div>
+          <div class="text-sm text-gray-600">dostawców</div>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-xl p-4">
+          <div class="text-3xl font-extrabold"><span class="kpi" data-target="200">0</span>h</div>
+          <div class="text-sm text-gray-600">oszczędzone miesięcznie</div>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-xl p-4">
+          <div class="text-3xl font-extrabold"><span class="kpi" data-target="99">0</span>,9%</div>
+          <div class="text-sm text-gray-600">SLA</div>
+        </div>
+        <div class="bg-white/70 backdrop-blur-sm border border-gray-100 rounded-xl p-4">
+          <div class="text-3xl font-extrabold"><span class="kpi" data-target="7">0</span> dni</div>
+          <div class="text-sm text-gray-600">czas wdrożenia</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- APP PREVIEW -->
+  <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold">Zobacz, jak wygląda BEKON</h2>
+        <p class="text-gray-600">Prosty panel do obsługi zamówień, kompletacji i fakturowania</p>
+      </div>
+
+      <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 shadow-xl p-2">
+        <div class="bg-white rounded-xl shadow-sm">
+          <!-- Browser chrome -->
+          <div class="flex items-center px-4 py-3 border-b border-gray-100">
+            <div class="flex space-x-2">
+              <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+              <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+              <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+            </div>
+            <div class="flex-1 text-center">
+              <div class="bg-gray-100 rounded-md px-4 py-1 inline-block text-sm text-gray-600">app.bekon.pl</div>
+            </div>
+          </div>
+
+          <!-- Preview content -->
+          <div class="p-6 md:p-8">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="text-2xl font-bold">Dashboard</h3>
+              <div class="flex items-center space-x-3">
+                <span class="hidden sm:inline text-sm text-gray-500">Ostatnia aktualizacja: 2 min temu</span>
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-8">
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Zamówienia dziś</p>
+                <p class="text-2xl font-bold">47</p>
+                <p class="text-xs text-green-600 mt-1">↑ 12% vs wczoraj</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Wartość zamówień</p>
+                <p class="text-2xl font-bold">23&nbsp;450 zł</p>
+                <p class="text-xs text-green-600 mt-1">↑ 8% vs średnia</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Aktywni klienci</p>
+                <p class="text-2xl font-bold">89</p>
+                <p class="text-xs text-gray-500 mt-1">z 124 wszystkich</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Czas realizacji</p>
+                <p class="text-2xl font-bold">2,5 h</p>
+                <p class="text-xs text-green-600 mt-1">↓ 30 min vs średnia</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold mb-4">Ostatnie zamówienia</h4>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-green-500 rounded-full" aria-hidden="true"></div>
+                    <div>
+                      <p class="font-medium text-sm">Restauracja Polska</p>
+                      <p class="text-xs text-gray-500">#2024-847 • 5 min temu</p>
+                    </div>
+                  </div>
+                  <span class="font-semibold">1&nbsp;230 zł</span>
+                </div>
+                <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full" aria-hidden="true"></div>
+                    <div>
+                      <p class="font-medium text-sm">Bistro Centrum</p>
+                      <p class="text-xs text-gray-500">#2024-846 • 18 min temu</p>
+                    </div>
+                  </div>
+                  <span class="font-semibold">890 zł</span>
+                </div>
+                <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-green-500 rounded-full" aria-hidden="true"></div>
+                    <div>
+                      <p class="font-medium text-sm">Pizzeria Roma</p>
+                      <p class="text-xs text-gray-500">#2024-845 • 32 min temu</p>
+                    </div>
+                  </div>
+                  <span class="font-semibold">2&nbsp;100 zł</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
+              <a href="#consultation" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">Umów prezentację</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROBLEM -> SOLUTION -->
+  <section id="solution" class="py-16 md:py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+      <div class="self-center">
+        <h2 class="text-3xl font-bold mb-4">Z chaosu do przewidywalnego procesu</h2>
+        <p class="text-gray-700 mb-4">Zamówienia przychodzą nocą przez e‑mail, SMS, notatki? Ręczne przepisywanie generuje błędy, opóźnienia i marnotrawstwo.</p>
+        <p class="text-gray-700">BEKON porządkuje cały łańcuch — od zebrania zamówień po fakturę i płatność. Widzisz stany, ceny i statusy w czasie rzeczywistym.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#consultation" class="bg-black text-white px-5 py-3 rounded-lg">Zobacz, jak to działa</a>
+          <a href="#pricing" class="px-5 py-3 border border-gray-300 rounded-lg">Cennik</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl border border-gray-200 p-6">
+        <ol class="space-y-4 text-gray-800">
+          <li><span class="font-semibold">1. Automatyczne zamówienia</span> — przechwyt z e‑mail/SMS/PDF → cyfrowe zlecenia.</li>
+          <li><span class="font-semibold">2. Kompletacja</span> — listy pobrań, kontrola braków i substytutów.</li>
+          <li><span class="font-semibold">3. Dostawy</span> — statusy, potwierdzenia odbioru, korekty.</li>
+          <li><span class="font-semibold">4. Finanse</span> — faktury, płatności, rozrachunki i raporty.</li>
+          <li><span class="font-semibold">5. Raporty i decyzje</span> — widok KPI i sprzedaży w jednym miejscu.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Wszystko, czego potrzebuje hurtownia</h2>
+        <p class="text-gray-600">Zamknięte B2B dla klientów + pełny workflow po stronie dostawcy</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift opacity-0 translate-y-3 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">Zamknięty katalog i ceny</h3>
+          <p class="text-gray-600 text-sm">Każdy klient widzi swój asortyment i warunki. Promocje, dostępność, historia i faktury w jednym miejscu.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift opacity-0 translate-y-3 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">Automatyzacja zamówień</h3>
+          <p class="text-gray-600 text-sm">Konwersja e‑mail/SMS/PDF do zamówień. Mniej błędów, szybsza obsługa.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift opacity-0 translate-y-3 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">Kompletacja i dostawy</h3>
+          <p class="text-gray-600 text-sm">Listy pobrań, kontrola braków, zamienniki, potwierdzenia dostaw.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift opacity-0 translate-y-3 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">Fakturowanie i płatności</h3>
+          <p class="text-gray-600 text-sm">Automatyczne faktury, rozrachunki, terminy. Płatność kartą/przelewem.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift opacity-0 translate-y-3 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">Analityka i KPI</h3>
+          <p class="text-gray-600 text-sm">Marże, sprzedaż, cash flow, rotacja towarów — zawsze pod ręką.</p>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift opacity-0 translate-y-3 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">Panel klienta 24/7</h3>
+          <p class="text-gray-600 text-sm">Twoi klienci składają zamówienia samodzielnie, widzą ceny, dostępność, promocje i historię.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ROLE-BASED SCENARIOS -->
+  <section id="scenarios" class="py-20 px-6 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold">Skrojone pod Twój zespół</h2>
+        <p class="text-gray-600">BEKON wspiera właścicieli, operacje, finanse i sprzedaż – bez —</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 hover-lift">
+          <h3 class="font-semibold mb-2">Dla Właścicieli i Menedżerów</h3>
+          <ul class="text-gray-700 text-sm space-y-2">
+            <li>• Jeden widok od zamówienia do faktury — pełna kontrola nad biznesem.</li>
+            <li>• Dane w czasie rzeczywistym: sprzedaż, marże, statusy.</li>
+            <li>• AI porządkuje napływające zamówienia — mniej błędów, większa skala.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 hover-lift">
+          <h3 class="font-semibold mb-2">Dla Managerów Operacyjnych</h3>
+          <ul class="text-gray-700 text-sm space-y-2">
+            <li>• Centralizacja zamówień — kompletacja bez pomyłek.</li>
+            <li>• Listy pobrań, kontrola braków i zamienników.</li>
+            <li>• Przejrzyste statusy dostaw, szybkie reakcje na zmiany.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 hover-lift">
+          <h3 class="font-semibold mb-2">Dla Zespołów Finansów</h3>
+          <ul class="text-gray-700 text-sm space-y-2">
+            <li>• Automatyczne faktury bez ręcznego przepisywania.</li>
+            <li>• Widoczność przychodów, kosztów i marż w panelu.</li>
+            <li>• Lepszy cash flow dzięki sprawnym rozrachunkom.</li>
+          </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 hover-lift">
+          <h3 class="font-semibold mb-2">Dla Przedstawicieli Handlowych</h3>
+          <ul class="text-gray-700 text-sm space-y-2">
+            <li>• Klient zamawia sam — mniej telefonów i SMS‑ów.</li>
+            <li>• Ceny i dostępność na żywo, promocje bez wysiłku.</li>
+            <li>• Mniej błędów, więcej czasu na relacje z klientami.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BENEFITS -->
+  <section id="benefits" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-6">
+      <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift">
+        <h3 class="font-semibold mb-2">Mniej błędów</h3>
+        <p class="text-gray-600 text-sm">Eliminujemy przepisywanie i chaos. Zamówienia zawsze czytelne i kompletne.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift">
+        <h3 class="font-semibold mb-2">Oszczędność czasu</h3>
+        <p class="text-gray-600 text-sm">Obsługa spływu zamówień w minutach, nie godzinach. Zespół robi więcej, bez nadgodzin.</p>
+      </div>
+      <div class="bg-white border border-gray-200 rounded-xl p-6 hover-lift">
+        <h3 class="font-semibold mb-2">Mniejsze marnotrawstwo</h3>
+        <p class="text-gray-600 text-sm">Lepiej planujesz zakupy i produkcję. To mniej zwrotów i przeterminowań.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING (Growth highlighted as before) -->
+  <section id="pricing" class="py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold">Prosty cennik</h2>
+        <p class="text-gray-600">30 dni za darmo. Bez karty.</p>
+      </div>
+      <div class="flex items-center justify-center mb-8">
+        <div class="inline-flex items-center gap-3 bg-white border border-gray-200 rounded-full px-2 py-1">
+          <button id="billMonthly" class="px-4 py-1 text-sm rounded-full bg-black text-white">Miesięcznie</button>
+          <button id="billYearly" class="px-4 py-1 text-sm rounded-full">Rocznie -15%</button>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover-lift">
+          <h3 class="text-xl font-semibold">Starter</h3>
+          <p class="text-sm text-gray-600 mt-1">Dla startujących dostawców</p>
+          <div class="mt-6 space-y-1">
+            <p class="text-sm text-gray-600">Wdrożenie</p>
+            <p class="text-3xl font-extrabold">1&nbsp;499<span class="text-lg font-semibold"> zł</span></p>
+            <p class="text-sm text-gray-600 mt-4">Abonament</p>
+            <p class="text-3xl font-extrabold"><span class="price" data-monthly="399" data-yearly="339">399</span><span class="text-lg font-semibold"> zł/mc</span></p>
+            <p class="text-xs text-green-700 hidden savings">Przy płatności rocznej oszczędzasz <span class="save-val">0</span> zł/rok</p>
+          </div>
+          <ul class="mt-6 space-y-2 text-sm text-gray-700">
+            <li>• do 500 zamówień / mc</li>
+            <li>• Aplikacja dla klientów</li>
+            <li>• Import/eksport CSV</li>
+            <li>• Podstawowa analityka</li>
+            <li>• Support e-mail</li>
+          </ul>
+          <a href="#consultation" class="mt-8 inline-block w-full text-center bg-black text-white py-3 rounded-lg">Wybierz plan</a>
+        </div>
+        <div class="bg-white border-2 border-purple-500 rounded-2xl p-8 shadow-lg relative hover-lift">
+          <span class="absolute -top-3 right-6 bg-purple-600 text-white text-xs px-3 py-1 rounded-full">Najczęściej wybierany</span>
+          <h3 class="text-xl font-semibold">Growth</h3>
+          <p class="text-sm text-gray-600 mt-1">Dla szybko rosnących firm</p>
+          <div class="mt-6 space-y-1">
+            <p class="text-sm text-gray-600">Wdrożenie</p>
+            <p class="text-3xl md:text-4xl font-extrabold">3&nbsp;499<span class="text-lg md:text-xl font-semibold"> zł</span></p>
+            <p class="text-sm text-gray-600 mt-4">Abonament</p>
+            <p class="text-3xl md:text-4xl font-extrabold"><span class="price" data-monthly="799" data-yearly="679">799</span><span class="text-lg md:text-xl font-semibold"> zł/mc</span></p>
+            <p class="text-xs text-green-700 hidden savings">Przy płatności rocznej oszczędzasz <span class="save-val">0</span> zł/rok</p>
+          </div>
+          <ul class="mt-6 space-y-2 text-sm text-gray-700">
+            <li>• do 3&nbsp;000 zamówień / mc</li>
+            <li>• Katalog cen i promocji dla klientów</li>
+            <li>• Aplikacja mobilna dla klientów</li>
+            <li>• Zaawansowana analityka i raporty</li>
+            <li>• Support premium (telefon + priorytet e-mail)</li>
+          </ul>
+          <a href="#consultation" class="mt-8 inline-block w-full text-center bg-black text-white py-3 rounded-lg">Wybierz plan</a>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover-lift">
+          <h3 class="text-xl font-semibold">Scale</h3>
+          <p class="text-sm text-gray-600 mt-1">Dla dużych dystrybutorów</p>
+          <div class="mt-6 space-y-1">
+            <p class="text-sm text-gray-600">Wdrożenie</p>
+            <p class="text-3xl font-extrabold">od 6&nbsp;999<span class="text-lg font-semibold"> zł</span></p>
+            <p class="text-sm text-gray-600 mt-4">Abonament</p>
+            <p class="text-3xl font-extrabold"><span class="price" data-monthly="1499" data-yearly="1274">od 1&nbsp;499</span><span class="text-lg font-semibold"> zł/mc</span></p>
+            <p class="text-xs text-green-700 hidden savings">Przy płatności rocznej oszczędzasz <span class="save-val">0</span> zł/rok</p>
+          </div>
+          <ul class="mt-6 space-y-2 text-sm text-gray-700">
+            <li>• Nielimitowane zamówienia</li>
+            <li>• Zaawansowane role i uprawnienia zespołu</li>
+            <li>• Wydzielone środowisko + SLA 99,9%</li>
+            <li>• Indywidualny opiekun wdrożeniowy</li>
+          </ul>
+          <a href="#consultation" class="mt-8 inline-block w-full text-center bg-black text-white py-3 rounded-lg">Porozmawiajmy</a>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-500 mt-6">Ceny netto. Rabat -15% przy płatności rocznej.</p>
+    </div>
+  </section>
+
+  <!-- DEMO CTA (sticky section style) -->
+  <section class="py-20 px-6 bg-white border-y border-gray-100">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+      <div class="md:sticky md:top-24 self-start">
+        <h2 class="text-3xl font-bold mb-4">Przyspiesz obsługę zamówień</h2>
+        <p class="text-gray-600 mb-6">Zobacz, jak BEKON automatyzuje proces przyjmowania i realizacji zamówień w Twojej firmie.</p>
+        <a href="#consultation" class="inline-block bg-black text-white px-6 py-3 rounded-lg">Umów 30‑min prezentację</a>
+      </div>
+      <div class="space-y-6">
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">1. Onboarding i import danych</h3>
+          <p class="text-gray-600">Import produktów, cenników i klientów. —</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">2. Aktywacja aplikacji dla klientów</h3>
+          <p class="text-gray-600">Szybkie szkolenie i dostęp do aplikacji mobilnej.</p>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 opacity-0 translate-y-4 transition-all duration-700 reveal">
+          <h3 class="font-semibold mb-2">3. Automatyzacja i raporty</h3>
+          <p class="text-gray-600">Zamówienia spływają automatycznie, a Ty masz wgląd w KPI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="consultation" class="py-20 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Umów bezpłatną konsultację</h2>
+        <p class="text-gray-600 mb-6">Porozmawiajmy o Twoich procesach. Pokażemy BEKON i przygotujemy wstępny plan wdrożenia.</p>
+        <ul class="space-y-3 text-gray-700">
+          <li>• 30-min spotkanie online</li>
+          <li>• Wstępna analiza procesów</li>
+          <li>• Plan wdrożenia w 7 dni</li>
+        </ul>
+      </div>
+      <form class="bg-white rounded-2xl border border-gray-200 p-6 space-y-4" action="https://formspree.io/f/your-id" method="POST">
+        <div>
+          <label class="block text-sm font-medium mb-1" for="name">Imię i nazwisko</label>
+          <input id="name" name="name" type="text" required class="w-full rounded-lg border-gray-300 focus:border-purple-500 focus:ring-purple-500" placeholder="Jan Kowalski" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="email">E-mail</label>
+          <input id="email" name="email" type="email" required class="w-full rounded-lg border-gray-300 focus:border-purple-500 focus:ring-purple-500" placeholder="jan@firma.pl" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="company">Firma</label>
+          <input id="company" name="company" type="text" class="w-full rounded-lg border-gray-300 focus:border-purple-500 focus:ring-purple-500" placeholder="Nazwa firmy" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1" for="message">Wiadomość</label>
+          <textarea id="message" name="message" rows="4" class="w-full rounded-lg border-gray-300 focus:border-purple-500 focus:ring-purple-500" placeholder="Opisz krótko swoje potrzeby..."></textarea>
+        </div>
+        <button type="submit" class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">Wyślij</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="px-6 py-12 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center">
+          <span class="text-xl font-bold">BEKON</span>
+          <span class="ml-2 text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">OMS</span>
+        </div>
+        <p class="text-sm text-gray-600 mt-4">„Polski Fresho” — OMS dla hurtowni świeżej żywności.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Produkt</h3>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#solution" class="hover:underline">Rozwiązanie</a></li>
+          <li><a href="#features" class="hover:underline">Funkcje</a></li>
+          <li><a href="#pricing" class="hover:underline">Cennik</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Firma</h3>
+        <ul class="space-y-2 text-sm text-gray-600">
+          <li><a href="#consultation" class="hover:underline">Kontakt</a></li>
+          <li><a href="#" class="hover:underline">Polityka prywatności</a></li>
+          <li><a href="#" class="hover:underline">Regulamin</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Zaloguj się</h3>
+        <a href="https://app.bekon.pl" class="text-sm text-gray-600 hover:underline">app.bekon.pl</a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 text-xs text-gray-500">&copy; <span id="year"></span> BEKON. Wszelkie prawa zastrzeżone.</div>
+  </footer>
+
+  <!-- Sticky CTA (mobile) -->
+  <div id="stickyCta" class="fixed bottom-4 inset-x-4 md:hidden bg-black text-white rounded-full shadow-lg px-5 py-3 flex items-center justify-between z-50 hidden">
+    <span class="text-sm">Gotowy, by zobaczyć demo?</span>
+    <a href="#consultation" class="ml-4 bg-white text-black px-3 py-2 rounded-full text-sm font-semibold">Umów prezentację</a>
+  </div>
+
+  <script>
+    // Mobile menu
+    document.getElementById('mm')?.addEventListener('click',()=>{
+      const m = document.getElementById('mmenu'); m?.classList.toggle('hidden');
+    });
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+      const id=a.getAttribute('href'); if(id && id.length>1){ const el=document.querySelector(id); if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}) } }
+    }));
+    // KPI count-up
+    function animateCount(el){ const t=Number(el.dataset.target||0); let c=0; const s=performance.now(); const d=1200;
+      function step(now){ const p=Math.min(1,(now-s)/d); c=Math.floor(t*(0.2+0.8*p*p)); el.textContent=c.toLocaleString('pl-PL'); if(p<1) requestAnimationFrame(step); }
+      requestAnimationFrame(step);
+    }
+    document.querySelectorAll('.kpi').forEach(k=>{
+      const io=new IntersectionObserver(es=>{es.forEach(e=>{ if(e.isIntersecting){ animateCount(k); io.unobserve(k); } })},{threshold:.6}); io.observe(k);
+    });
+    // Reveal on scroll
+    const rObs=new IntersectionObserver(es=>{ es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.remove('opacity-0','translate-y-3'); rObs.unobserve(e.target);} })},{threshold:.2});
+    document.querySelectorAll('.reveal').forEach(el=>rObs.observe(el));
+    // Billing toggle
+    const mBtn=document.getElementById('billMonthly'); const yBtn=document.getElementById('billYearly'); const prices=[...document.querySelectorAll('.price')];
+    function fmt(n){ return Number(n).toLocaleString('pl-PL') }
+    function updateBilling(mode){
+      const yearly=mode==='yearly';
+      prices.forEach(p=>{
+        const m=Number(p.dataset.monthly), y=Number(p.dataset.yearly);
+        p.textContent=fmt(yearly?y:m);
+        const box=p.closest('.mt-6').querySelector('.savings'); const sv=p.closest('.mt-6').querySelector('.save-val');
+        const save=Math.max(0, Math.round(m*12 - y*12));
+        if(box && sv){ if(yearly && save>0){ sv.textContent=fmt(save); box.classList.remove('hidden'); } else { box.classList.add('hidden'); } }
+      });
+      mBtn.classList.toggle('bg-black', !yearly); mBtn.classList.toggle('text-white', !yearly);
+      yBtn.classList.toggle('bg-black', yearly); yBtn.classList.toggle('text-white', yearly);
+    }
+    mBtn?.addEventListener('click',()=>updateBilling('monthly'));
+    yBtn?.addEventListener('click',()=>updateBilling('yearly'));
+    updateBilling('monthly');
+    // Sticky CTA
+    const sticky=document.getElementById('stickyCta'); let shown=false;
+    window.addEventListener('scroll',()=>{ const y=window.scrollY||0; if(y>360 && !shown){ sticky?.classList.remove('hidden'); shown=true;} if(y<=360 && shown){ sticky?.classList.add('hidden'); shown=false;} },{passive:true});
+    // Year
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
