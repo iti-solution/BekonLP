@@ -83,7 +83,7 @@
     <div class="absolute inset-0 grid-pattern opacity-60" aria-hidden="true"></div>
     <div class="max-w-6xl mx-auto relative z-10">
       <div class="text-center">
-        
+        <span class="inline-flex items-center text-xs md:text-sm bg-purple-50 border border-purple-200 text-purple-700 rounded-full px-3 py-1">Polski system OMS dla hurtowni świeżej żywności</span>
         
 <span class="inline-flex items-center text-xs md:text-sm bg-purple-50 border border-purple-200 text-purple-700 rounded-full px-3 py-1">
   System zamówień dla dostawców gastronomii
@@ -124,15 +124,17 @@
     </div>
   </header>
 
-  <!-- APP DASHBOARD PREVIEW -->
+  <!-- APP PREVIEW -->
   <section class="py-16 px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-8">
-        <h2 class="text-3xl font-bold">Podgląd dashboardu</h2>
-        <p class="text-gray-600">Najważniejsze metryki i ostatnie zamówienia — w jednym miejscu</p>
+        <h2 class="text-3xl font-bold">Zobacz, jak wygląda BEKON</h2>
+        <p class="text-gray-600">Prosty panel do obsługi zamówień, kompletacji i fakturowania</p>
       </div>
+
       <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 shadow-xl p-2">
         <div class="bg-white rounded-xl shadow-sm">
+          <!-- Browser chrome -->
           <div class="flex items-center px-4 py-3 border-b border-gray-100">
             <div class="flex space-x-2">
               <div class="w-3 h-3 bg-red-400 rounded-full"></div>
@@ -143,11 +145,77 @@
               <div class="bg-gray-100 rounded-md px-4 py-1 inline-block text-sm text-gray-600">app.bekon.pl</div>
             </div>
           </div>
-          <div class="p-4 md:p-6">
-            <div class="rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
-              <img src="assets/dashboard.jpg" alt="Podgląd dashboardu BEKON" class="w-full object-cover" />
+
+          <!-- Preview content -->
+          <div class="p-6 md:p-8">
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="text-2xl font-bold">Dashboard</h3>
+              <div class="flex items-center space-x-3">
+                <span class="hidden sm:inline text-sm text-gray-500">Ostatnia aktualizacja: 2 min temu</span>
+                <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse" aria-hidden="true"></div>
+              </div>
             </div>
-            <div class="text-center mt-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 mb-8">
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Zamówienia dziś</p>
+                <p class="text-2xl font-bold">47</p>
+                <p class="text-xs text-green-600 mt-1">↑ 12% vs wczoraj</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Wartość zamówień</p>
+                <p class="text-2xl font-bold">23&nbsp;450 zł</p>
+                <p class="text-xs text-green-600 mt-1">↑ 8% vs średnia</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Aktywni klienci</p>
+                <p class="text-2xl font-bold">89</p>
+                <p class="text-xs text-gray-500 mt-1">z 124 wszystkich</p>
+              </div>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <p class="text-sm text-gray-600 mb-1">Czas realizacji</p>
+                <p class="text-2xl font-bold">2,5 h</p>
+                <p class="text-xs text-green-600 mt-1">↓ 30 min vs średnia</p>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-semibold mb-4">Ostatnie zamówienia</h4>
+              <div class="space-y-3">
+                <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-green-500 rounded-full" aria-hidden="true"></div>
+                    <div>
+                      <p class="font-medium text-sm">Restauracja Polska</p>
+                      <p class="text-xs text-gray-500">#2024-847 • 5 min temu</p>
+                    </div>
+                  </div>
+                  <span class="font-semibold">1&nbsp;230 zł</span>
+                </div>
+                <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-yellow-500 rounded-full" aria-hidden="true"></div>
+                    <div>
+                      <p class="font-medium text-sm">Bistro Centrum</p>
+                      <p class="text-xs text-gray-500">#2024-846 • 18 min temu</p>
+                    </div>
+                  </div>
+                  <span class="font-semibold">890 zł</span>
+                </div>
+                <div class="flex items-center justify-between bg-white p-3 rounded-lg">
+                  <div class="flex items-center space-x-3">
+                    <div class="w-2 h-2 bg-green-500 rounded-full" aria-hidden="true"></div>
+                    <div>
+                      <p class="font-medium text-sm">Pizzeria Roma</p>
+                      <p class="text-xs text-gray-500">#2024-845 • 32 min temu</p>
+                    </div>
+                  </div>
+                  <span class="font-semibold">2&nbsp;100 zł</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-8">
               <a href="#consultation" class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800">Umów prezentację</a>
             </div>
           </div>

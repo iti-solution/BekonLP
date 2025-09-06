@@ -1,3 +1,3 @@
-# Bekon Landing Page (fixed)
+# Bekon Landing Page (final)
 
-Usunięto tagline, przywrócono poprzedni dashboard.
+Przywrócono sekcję APP PREVIEW z pełnym dashboardem.
